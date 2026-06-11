@@ -23,10 +23,10 @@ def call(Map configMap){
                 steps {
                     script {
                         sh """
-                        echo "hello build"
-                        sleep 10
-                        env
-                        echo "Hello ${params.PERSON}
+                         echo hello build
+                         sleep 10
+                         env
+                         echo Hello ${params.PERSON}
                         """
                     }
                 }
