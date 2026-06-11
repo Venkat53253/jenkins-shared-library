@@ -3,7 +3,7 @@ def call(Map configMap){
         agent {
             label 'agent1'
         }
-        enviornment {
+        environment {
             course = 'jenkins'
         }
         options {
@@ -61,7 +61,7 @@ def call(Map configMap){
         post {
             always {
                 echo 'not completed'
-                deleteder()    
+                deleteDir()    
             }
             success {
                 echo 'sucess'
