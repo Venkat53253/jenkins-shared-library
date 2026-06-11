@@ -7,8 +7,8 @@ def call(Map configMap) {
             appVersion = ''
             region = 'us-east-1'
             acc_id = '622072308398'
-            project = 'roboshop'
-            component = 'catalogue'
+            PROJECT = configMap.get('project')
+            COMPONENT = configMap.get('component')
         }
         options {
                 timeout(time: 30, unit: 'MINUTES') 
